@@ -30,14 +30,17 @@ session_start();
 for ($i=0; $i < 5; $i++) { 
 	if($_POST['Enter']){
 		if(($_POST['login']==$users[$i]['login'])&&($_POST['password']==$users[$i]['password'])){
-			$_SESSION['user'] = $_POST['login'];
+			$_SESSION['user'] = $users[$i]['login'];
 			$_SESSION['lang'] = $users[$i]['lang'];
+			// var_dump($_SESSION);
+			// die();
 			header("Location: second-page.php");
-			exit;
+			// exit;
 		}
 	}
 }
 ?>
+
 <html><body>
 Неверный пароль!
 <a href="homework05.php?logout=true">logout</a>

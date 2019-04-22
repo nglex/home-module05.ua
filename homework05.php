@@ -1,13 +1,8 @@
-<?php
-/*session_start();
-if($_POST['logout'] == true){
-		unset($_SESSION['start']);
-	}
-*/
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Authorization</title>
 </head>
 <body>
